@@ -1,0 +1,183 @@
+.headerContainer {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.actionBtn {
+  background-color: #1E1E1E;
+  text-transform: capitalize;
+  color: white;
+  border-radius: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+
+  &:hover {
+    background-color: #1E1E1E;
+  }
+
+  .arrRight {
+    width: 15px;
+    margin-left: 8px;
+  }
+
+  @media screen and (min-width: 900px) {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
+.landingArea {
+  min-height: 100vh;
+  background-color: white;
+  padding-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  color: #1E1E1E;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .textArea {
+    margin-bottom: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .greeting {
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+      font-weight: 500;
+      font-size: 13px;
+    }
+    .title {
+      font-family: EB Garamond;
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 45px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .captionText {
+      max-width: 315px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .scrollDownImg {
+    margin-bottom: 10px;
+    width: 120px;
+  }
+}
+
+.projectsList {
+  padding: 70px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .proj {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    .projectInfo {
+      height: 350px;
+      background-color: #454545;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background-size: cover;
+      background-position: top;
+  
+      .title {
+        color: #1E1E1E;
+        font-family: EB Garamond;
+        font-size: 22px;
+        margin-bottom: 5px;
+      }
+      .description {
+        color: #444444;
+        font-size: 12px;
+        line-height: 17px;
+      }
+  
+      &.light {
+        .title {
+          color: white;
+        }
+        .description {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .landingArea {
+    .textArea {
+      .greeting {
+        font-size: 14px;
+      }
+      .title {
+        font-size: 46px;
+        line-height: 54px;
+      }
+      .captionText {
+        max-width: 355px;
+      }
+    }
+  }
+
+  .projectsList {
+    .proj {
+      max-width: 400px;
+      .projectInfo {
+        height: 450px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        .title {
+          font-size: 28px;
+        }
+        .description {
+          font-size: 14px;
+        }    
+      }
+    }
+  }  
+}
+
+@media screen and (min-width: 900px) {
+  .landingArea {
+    .textArea {
+      .title {
+        font-size: 60px;
+        line-height: 70px;
+      }
+      .captionText {
+        max-width: 355px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .landingArea {
+    .textArea {
+      .title {
+        font-size: 66px;
+        line-height: 76px;
+      }
+      .captionText {
+        max-width: 355px;
+      }
+    }
+  }
+}

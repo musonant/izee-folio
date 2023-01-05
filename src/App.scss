@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Inter;
+}
+
+.body-text {
+  color: #666666;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  line-height: 1.15rem;
+  
+  @media screen and (min-width: 600px) {
+    line-height: 1.35rem;
+    font-size: 15px;
+  }
+}
