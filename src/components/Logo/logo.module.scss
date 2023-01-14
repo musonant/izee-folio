@@ -1,0 +1,49 @@
+.logoContainer {
+  background-color: #1E1E1E;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  transition: all 250ms ease-out;
+  padding-left: 4px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+
+  .text {
+    font-size: 24px;
+    padding-left: 6px;
+    font-family: EB Garamond;
+    color: white;
+    transition: all 100ms ease-out;
+    line-height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &.short {
+      background-color: #1E1E1E;
+      z-index: 10;
+      width: 40px;
+    }
+
+    &.long {
+      opacity: 0;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  &:hover {
+    width: 150px;
+
+    .text.short {
+      opacity: 0;
+    }
+    .text.long {
+      opacity: 1;
+      transition: all 350ms ease-in-out;
+    }
+  }
+}
