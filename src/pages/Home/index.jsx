@@ -5,11 +5,13 @@ import Grid from '@mui/material/Grid';
 import Header from '../../components/Header';
 import styles from './home.module.scss';
 import scrollDownImg from '../../assets/img/scroll-down.svg';
+import downArrow from '../../assets/img/down-icon.svg';
 import awoofImg from '../../assets/img/awoof.png';
 import npiImg from '../../assets/img/npi.png';
 import storyMaximaImg from '../../assets/img/story-maxima.png';
 import propBaronImg from '../../assets/img/prop-baron.png';
 import arrRight from '../../assets/img/arrow-right.svg';
+import Footer from '../../components/Footer';
 
 export default function Home() {
   const projects = [
@@ -50,8 +52,11 @@ export default function Home() {
           <p className={classNames('body-text', styles.captionText)}>I leverage on proven data and design thinking, both to solve real business problems, and to shape the development of products.</p>
         </div>
 
-        <div>
-          <img className={styles.scrollDownImg} alt="scroll-down" src={scrollDownImg} />
+        <div className={styles.scrollDown}>
+          <img className={classNames(styles.scrollDownImg, styles.rotating)} alt="scroll-down" src={scrollDownImg} />
+          <div className={styles.downArrow}>
+            <img src={downArrow} alt="" className={styles.downArroImg} />
+          </div>
         </div>
       </section>
 
@@ -80,6 +85,10 @@ export default function Home() {
           ))}
         </Grid>
       </section>
+
+      <div>
+        <Footer />
+      </div>
     </div>
   )
 }
