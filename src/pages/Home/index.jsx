@@ -20,7 +20,7 @@ export default function Home() {
       name: 'Property Baron Network',
       description:
         'A Property technology dashboard platform for trading and management.',
-      link: 'https://www.notion.so/PBN-Web-App-UI-UX-Case-Study-5fce8d1bf4474b618c9d21556caecc66?pvs=4',
+      link: 'https://numerous-sardine-289.notion.site/PBN-Web-App-UI-UX-Case-Study-5fce8d1bf4474b618c9d21556caecc66',
     },
     {
       img: naipayImg,
@@ -28,14 +28,14 @@ export default function Home() {
       description:
         'Naipay focuses on catering to the needs of the underserved and unbanked population.',
       textTheme: 'light',
-      link: 'https://www.notion.so/Naipay-Bank-UI-UX-Case-Study-c2979a1395de4ccd930f5ef483abcb57?pvs=4',
+      link: 'https://numerous-sardine-289.notion.site/Naipay-Bank-UI-UX-Case-Study-c2979a1395de4ccd930f5ef483abcb57',
     },
     {
       img: sanoImg,
       name: 'Sano',
       description:
         'Everyday health application that allow users to set and track their nutrition goals.',
-      link: 'https://www.notion.so/Sano-App-UI-UX-Case-Study-006d2b115cc04210ae4fb4a2d246926d?pvs=4',
+      link: 'https://numerous-sardine-289.notion.site/Sano-App-UI-UX-Case-Study-006d2b115cc04210ae4fb4a2d246926d',
     },
     {
       img: npiImg,
@@ -43,7 +43,7 @@ export default function Home() {
       description:
         'Nigeria Property Investment Summit is set to show global investors the Real-Estate opportunities in Nigeria.',
       textTheme: 'light',
-      link: 'https://www.notion.so/NPI-Summit-UI-Case-Study-5e5a7da5b2984c9a8476c3260579dc77?pvs=4',
+      link: 'https://numerous-sardine-289.notion.site/NPI-Summit-UI-Case-Study-5e5a7da5b2984c9a8476c3260579dc77',
     },
   ];
 
