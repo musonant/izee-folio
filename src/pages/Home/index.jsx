@@ -6,9 +6,9 @@ import Header from '../../components/Header';
 import styles from './home.module.scss';
 import scrollDownImg from '../../assets/img/scroll-down.svg';
 import downArrow from '../../assets/img/down-icon.svg';
-import awoofImg from '../../assets/img/awoof.png';
 import npiImg from '../../assets/img/npi.png';
-import storyMaximaImg from '../../assets/img/story-maxima.png';
+import naipayImg from '../../assets/img/naipay.svg';
+import sanoImg from '../../assets/img/sano.svg';
 import propBaronImg from '../../assets/img/prop-baron.png';
 import arrRight from '../../assets/img/arrow-right.svg';
 import Footer from '../../components/Footer';
@@ -20,31 +20,22 @@ export default function Home() {
       name: 'Property Baron Network',
       description:
         'A Property technology dashboard platform for trading and management.',
-      mobileLink:
-        'https://www.figma.com/proto/FBuW3dFBls4Jd8xld4gUdV/Portfolio?page-id=918%3A5478&node-id=932%3A14361&viewport=-2280%2C63%2C0.2&scaling=min-zoom&starting-point-node-id=962%3A27282',
-      desktopLink:
-        'https://www.figma.com/proto/FBuW3dFBls4Jd8xld4gUdV/Portfolio?page-id=918%3A5478&node-id=932%3A5428&viewport=281%2C133%2C0.03&scaling=scale-down-width&starting-point-node-id=962%3A27282',
+      link: 'https://www.notion.so/PBN-Web-App-UI-UX-Case-Study-5fce8d1bf4474b618c9d21556caecc66?pvs=4',
     },
     {
-      img: storyMaximaImg,
-      name: 'Story Maxima',
+      img: naipayImg,
+      name: 'Naipay',
       description:
-        'A Mobile application that links creatives to open job opportunities.',
+        'Naipay focuses on catering to the needs of the underserved and unbanked population.',
       textTheme: 'light',
-      mobileLink:
-        'https://www.figma.com/proto/FBuW3dFBls4Jd8xld4gUdV/Portfolio?page-id=918%3A5478&node-id=932%3A12163&viewport=-408%2C182%2C0.06&scaling=min-zoom&starting-point-node-id=962%3A27282',
-      desktopLink:
-        'https://www.figma.com/proto/FBuW3dFBls4Jd8xld4gUdV/Portfolio?page-id=918%3A5478&node-id=932%3A3234&viewport=-8%2C182%2C0.06&scaling=scale-down-width&starting-point-node-id=962%3A27282',
+      link: 'https://www.notion.so/Naipay-Bank-UI-UX-Case-Study-c2979a1395de4ccd930f5ef483abcb57?pvs=4',
     },
     {
-      img: awoofImg,
-      name: 'Awoof Website',
+      img: sanoImg,
+      name: 'Sano',
       description:
-        'A socially connected platform to give back, engage with, and reward your audiences and community.',
-      mobileLink:
-        'https://www.figma.com/proto/FBuW3dFBls4Jd8xld4gUdV/Portfolio?page-id=918%3A5478&node-id=940%3A23588&viewport=-1129%2C136%2C0.11&scaling=min-zoom&starting-point-node-id=962%3A27282',
-      desktopLink:
-        'https://www.figma.com/proto/FBuW3dFBls4Jd8xld4gUdV/Portfolio?page-id=918%3A5478&node-id=940%3A21229&viewport=-289%2C136%2C0.11&scaling=scale-down-width&starting-point-node-id=962%3A27282',
+        'Everyday health application that allow users to set and track their nutrition goals.',
+      link: 'https://www.notion.so/Sano-App-UI-UX-Case-Study-006d2b115cc04210ae4fb4a2d246926d?pvs=4',
     },
     {
       img: npiImg,
@@ -52,23 +43,9 @@ export default function Home() {
       description:
         'Nigeria Property Investment Summit is set to show global investors the Real-Estate opportunities in Nigeria.',
       textTheme: 'light',
-      mobileLink:
-        'https://www.figma.com/proto/FBuW3dFBls4Jd8xld4gUdV/Portfolio?page-id=918%3A5478&node-id=940%3A22859&viewport=-1249%2C136%2C0.11&scaling=min-zoom&starting-point-node-id=962%3A27282',
-      desktopLink:
-        'https://www.figma.com/proto/FBuW3dFBls4Jd8xld4gUdV/Portfolio?page-id=918%3A5478&node-id=940%3A22130&viewport=32%2C151%2C0.06&scaling=scale-down-width&starting-point-node-id=962%3A27282',
+      link: 'https://www.notion.so/NPI-Summit-UI-Case-Study-5e5a7da5b2984c9a8476c3260579dc77?pvs=4',
     },
   ];
-
-  const isMobileDevice = () => {
-    if (
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
-      )
-    ) {
-      return true;
-    }
-    return false;
-  };
 
   return (
     <div>
@@ -83,8 +60,8 @@ export default function Home() {
             Product Designer <br /> and Musician
           </h1>
           <p className={classNames('body-text', styles.captionText)}>
-            I leverage on proven data and design thinking, both to solve real
-            business problems, and to shape the development of products.
+            I leverage on proven data and design thinking to solve real business
+            problems and shape the development of products.
           </p>
         </div>
 
@@ -127,7 +104,7 @@ export default function Home() {
                   className={styles.actionBtn}
                   size="large"
                   variant="contained"
-                  href={isMobileDevice() ? proj.mobileLink : proj.desktopLink}
+                  href={proj.link}
                   target="_blank"
                 >
                   <span>Read Case Study</span>

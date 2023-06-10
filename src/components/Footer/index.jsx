@@ -14,29 +14,51 @@ export default function Footer() {
               Interested in <br />
               Collaborating?
             </h3>
-            <Button className={styles.button}>Get in touch</Button>
+            <Button
+              href="mailto:israelnnaoma@gmail.com"
+              className={styles.button}
+            >
+              Get in touch
+            </Button>
           </div>
 
           <div className={styles.contactLinkContainer}>
             <div className={styles.divider}></div>
-            <a href="mailto:israelnnaoma@gmail.com" className={styles.contactLink}>israelnnaoma@gmail.com</a>
+            <a
+              href="mailto:israelnnaoma@gmail.com"
+              className={styles.contactLink}
+            >
+              israelnnaoma@gmail.com
+            </a>
           </div>
 
           <div className={styles.copyrightRow}>
             <nav>
               <ul className={styles.linksList}>
                 <li>
-                  <a target="_blank" href="https://www.linkedin.com/in/israelnnaomauser/" rel="noreferrer">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/israelnnaomauser/"
+                    rel="noreferrer"
+                  >
                     <img alt="LinkedIn link" src={linkedinIcon} />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.instagram.com/halfizee/" rel="noreferrer">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/halfizee/"
+                    rel="noreferrer"
+                  >
                     <img alt="Instagram link" src={instaIcon} />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://dribbble.com/israelizee" rel="noreferrer">
+                  <a
+                    target="_blank"
+                    href="https://dribbble.com/israelizee"
+                    rel="noreferrer"
+                  >
                     <img alt="Dribbble link" src={dribbbleIcon} />
                   </a>
                 </li>
@@ -48,5 +70,5 @@ export default function Footer() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
