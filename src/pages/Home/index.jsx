@@ -33,6 +33,7 @@ export default function Home() {
     {
       img: sanoImg,
       name: 'Sano',
+      textTheme: 'light',
       description:
         'Everyday health application that allow users to set and track their nutrition goals.',
       link: 'https://numerous-sardine-289.notion.site/Sano-App-UI-UX-Case-Study-006d2b115cc04210ae4fb4a2d246926d',
