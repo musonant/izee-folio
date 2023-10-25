@@ -6,7 +6,7 @@ import Header from '../../components/Header';
 import styles from './home.module.scss';
 import scrollDownImg from '../../assets/img/scroll-down.svg';
 import downArrow from '../../assets/img/down-icon.svg';
-import npiImg from '../../assets/img/npi.png';
+import clafiya from '../../assets/img/clafiya.jpg';
 import naipayImg from '../../assets/img/naipay.svg';
 import sanoImg from '../../assets/img/sano.svg';
 import propBaronImg from '../../assets/img/prop-baron.png';
@@ -31,20 +31,20 @@ export default function Home() {
       link: 'https://numerous-sardine-289.notion.site/Naipay-Bank-UI-UX-Case-Study-c2979a1395de4ccd930f5ef483abcb57',
     },
     {
+      img: clafiya,
+      name: 'Clafiya',
+      description:
+        'Uniting in-person care and virtual solutions for a personalized healthcare experience.',
+      textTheme: 'light',
+      link: 'https://numerous-sardine-289.notion.site/Clafiya-Admin-Dashboard-Redesign-Case-Study-2b7ff342a4764a289a4bd2e345ba9263',
+    },
+    {
       img: sanoImg,
       name: 'Sano',
       textTheme: 'light',
       description:
         'Everyday health application that allow users to set and track their nutrition goals.',
       link: 'https://numerous-sardine-289.notion.site/Sano-App-UI-UX-Case-Study-006d2b115cc04210ae4fb4a2d246926d',
-    },
-    {
-      img: npiImg,
-      name: 'NPI Summit',
-      description:
-        'Nigeria Property Investment Summit is set to show global investors the Real-Estate opportunities in Nigeria.',
-      textTheme: 'light',
-      link: 'https://numerous-sardine-289.notion.site/NPI-Summit-UI-Case-Study-5e5a7da5b2984c9a8476c3260579dc77',
     },
   ];
 
