@@ -16,11 +16,12 @@ import Footer from '../../components/Footer';
 export default function Home() {
   const projects = [
     {
-      img: propBaronImg,
-      name: 'Property Baron Network',
+      img: clafiya,
+      name: 'Clafiya',
       description:
-        'A Property technology dashboard platform for trading and management.',
-      link: 'https://numerous-sardine-289.notion.site/PBN-Web-App-UI-UX-Case-Study-5fce8d1bf4474b618c9d21556caecc66',
+        'Uniting in-person care and virtual solutions for a personalized healthcare experience.',
+      textTheme: 'light',
+      link: 'https://numerous-sardine-289.notion.site/Clafiya-Admin-Dashboard-Redesign-Case-Study-2b7ff342a4764a289a4bd2e345ba9263',
     },
     {
       img: naipayImg,
@@ -31,12 +32,11 @@ export default function Home() {
       link: 'https://numerous-sardine-289.notion.site/Naipay-Bank-UI-UX-Case-Study-c2979a1395de4ccd930f5ef483abcb57',
     },
     {
-      img: clafiya,
-      name: 'Clafiya',
+      img: propBaronImg,
+      name: 'Property Baron Network',
       description:
-        'Uniting in-person care and virtual solutions for a personalized healthcare experience.',
-      textTheme: 'light',
-      link: 'https://numerous-sardine-289.notion.site/Clafiya-Admin-Dashboard-Redesign-Case-Study-2b7ff342a4764a289a4bd2e345ba9263',
+        'A Property technology dashboard platform for trading and management.',
+      link: 'https://numerous-sardine-289.notion.site/PBN-Web-App-UI-UX-Case-Study-5fce8d1bf4474b618c9d21556caecc66',
     },
     {
       img: sanoImg,
