@@ -89,29 +89,29 @@ export default function Home() {
         >
           {projects.map((proj) => (
             <Grid item>
-              <div className={styles.proj}>
-                <div
-                  className={classNames([
-                    styles.projectInfo,
-                    { [styles.light]: proj.textTheme === 'light' },
-                  ])}
-                  style={{ backgroundImage: 'url(' + proj.img + ')' }}
-                >
-                  <p className={styles.title}>{proj.name}</p>
-                  <p className={styles.description}>{proj.description}</p>
+              <a className={styles.projLink} target="blank" href={proj.link}>
+                <div className={styles.proj}>
+                  <div
+                    className={classNames([
+                      styles.projectInfo,
+                      { [styles.light]: proj.textTheme === 'light' },
+                    ])}
+                    style={{ backgroundImage: 'url(' + proj.img + ')' }}
+                  >
+                    <p className={styles.title}>{proj.name}</p>
+                    <p className={styles.description}>{proj.description}</p>
+                  </div>
+                  <Button
+                    fullWidth
+                    className={styles.actionBtn}
+                    size="large"
+                    variant="contained"
+                  >
+                    <span>Explore</span>
+                    <img alt="" className={styles.arrRight} src={arrRight} />
+                  </Button>
                 </div>
-                <Button
-                  fullWidth
-                  className={styles.actionBtn}
-                  size="large"
-                  variant="contained"
-                  href={proj.link}
-                  target="_blank"
-                >
-                  <span>Read Case Study</span>
-                  <img alt="" className={styles.arrRight} src={arrRight} />
-                </Button>
-              </div>
+              </a>
             </Grid>
           ))}
         </Grid>
