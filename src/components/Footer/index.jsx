@@ -65,7 +65,9 @@ export default function Footer() {
               </ul>
             </nav>
 
-            <p className={styles.copyright}>© 2022 Israel Nnaoma</p>
+            <p className={styles.copyright}>
+              © {new Date().getFullYear()} Israel Nnaoma
+            </p>
           </div>
         </div>
       </footer>
