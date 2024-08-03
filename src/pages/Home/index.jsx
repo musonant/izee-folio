@@ -6,7 +6,7 @@ import Header from '../../components/Header';
 import styles from './home.module.scss';
 import scrollDownImg from '../../assets/img/scroll-down.svg';
 import downArrow from '../../assets/img/down-icon.svg';
-import clafiya from '../../assets/img/clafiya.jpg';
+import clafiya from '../../assets/img/clafiya.webp';
 import naipayImg from '../../assets/img/naipay.svg';
 import sanoImg from '../../assets/img/sano.svg';
 import propBaronImg from '../../assets/img/prop-baron.png';
@@ -21,7 +21,7 @@ export default function Home() {
       description:
         'Uniting in-person care and virtual solutions for a personalized healthcare experience.',
       textTheme: 'light',
-      link: 'https://numerous-sardine-289.notion.site/Clafiya-Admin-Dashboard-Redesign-Case-Study-2b7ff342a4764a289a4bd2e345ba9263',
+      link: 'https://numerous-sardine-289.notion.site/Clafiya-Website-Redesign-0a32ee1528e44a8db6ea35cf3429f545',
     },
     {
       img: naipayImg,
