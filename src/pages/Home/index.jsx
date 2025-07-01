@@ -61,7 +61,7 @@ export default function Home() {
             Product Designer <br /> and Musician
           </h1>
           <p className={classNames('body-text', styles.captionText)}>
-            I design digital products that drive growth. With a deep focus on user behaviour, business goals, and design thinking. I turn complex business problems into intuitive, high-impact solutions; From early strategy to polished user interfaces.
+            I design digital products that drive growth, with a deep focus on user behaviour, business goals, and design thinking.
           </p>
         </div>
 
