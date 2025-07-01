@@ -61,8 +61,7 @@ export default function Home() {
             Product Designer <br /> and Musician
           </h1>
           <p className={classNames('body-text', styles.captionText)}>
-            I leverage on proven data and design thinking to solve real business
-            problems and shape the development of products.
+            I design digital products that drive growth. With a deep focus on user behaviour, business goals, and design thinking. I turn complex business problems into intuitive, high-impact solutions; From early strategy to polished user interfaces.
           </p>
         </div>
 
