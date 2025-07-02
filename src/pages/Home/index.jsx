@@ -38,6 +38,7 @@ export default function Home() {
       name: 'Land Curator',
       textTheme: 'light',
       description: 'Find Your Perfect Land in Texas & New Mexico.',
+      linkLabel: 'View Live Website',
       link: 'https://landcurator.com',
     },
     {
@@ -75,7 +76,7 @@ export default function Home() {
         <div className={styles.textArea}>
           <p className={styles.greeting}>Hello, Israel Here</p>
           <h1 className={styles.title}>
-            Product Designer <br /> and Musician
+            Turning Complex Problems <br /> Into Intuitive Products
           </h1>
           <p className={classNames('body-text', styles.captionText)}>
             I design digital products that drive growth, with a deep focus on
@@ -124,7 +125,7 @@ export default function Home() {
                     size="large"
                     variant="contained"
                   >
-                    <span>Read Case Study</span>
+                    <span>{proj.linkLabel || 'Read Case Study'}</span>
                     <img alt="" className={styles.arrRight} src={arrRight} />
                   </Button>
                 </div>
