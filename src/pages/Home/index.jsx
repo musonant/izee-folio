@@ -10,6 +10,8 @@ import clafiya from '../../assets/img/clafiya.webp';
 import landCurator from '../../assets/img/land_curator.webp';
 import zeem from '../../assets/img/zeem.webp';
 import naipayImg from '../../assets/img/naipay.svg';
+import sanoImg from '../../assets/img/sano.svg';
+import propBaronImg from '../../assets/img/prop-baron.png';
 import arrRight from '../../assets/img/arrow-right.svg';
 import Footer from '../../components/Footer';
 
@@ -45,6 +47,21 @@ export default function Home() {
       description:
         'Zeem makes studying abroad easy and within reach. Direct access to top universities and even student loan',
       link: 'https://numerous-sardine-289.notion.site/Zeem-Website-2231ca569bba804189bfd0df783f4508?source=copy_link',
+    },
+    {
+      img: propBaronImg,
+      name: 'Property Baron Network',
+      description:
+        'A Property technology dashboard platform for trading and management.',
+      link: 'https://numerous-sardine-289.notion.site/PBN-Web-App-UI-UX-Case-Study-5fce8d1bf4474b618c9d21556caecc66',
+    },
+    {
+      img: sanoImg,
+      name: 'Sano',
+      textTheme: 'light',
+      description:
+        'Everyday health application that allow users to set and track their nutrition goals.',
+      link: 'https://numerous-sardine-289.notion.site/Sano-App-UI-UX-Case-Study-006d2b115cc04210ae4fb4a2d246926d',
     },
   ];
 
@@ -88,7 +105,7 @@ export default function Home() {
           }}
         >
           {projects.map((proj) => (
-            <Grid item>
+            <Grid item sx={{ width: { md: 400 }, flexGrow: 1 }}>
               <a className={styles.projLink} target="blank" href={proj.link}>
                 <div className={styles.proj}>
                   <div
