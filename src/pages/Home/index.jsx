@@ -7,9 +7,9 @@ import styles from './home.module.scss';
 import scrollDownImg from '../../assets/img/scroll-down.svg';
 import downArrow from '../../assets/img/down-icon.svg';
 import clafiya from '../../assets/img/clafiya.webp';
+import landCurator from '../../assets/img/land_curator.webp';
+import zeem from '../../assets/img/zeem.webp';
 import naipayImg from '../../assets/img/naipay.svg';
-import sanoImg from '../../assets/img/sano.svg';
-import propBaronImg from '../../assets/img/prop-baron.png';
 import arrRight from '../../assets/img/arrow-right.svg';
 import Footer from '../../components/Footer';
 
@@ -32,19 +32,19 @@ export default function Home() {
       link: 'https://numerous-sardine-289.notion.site/Naipay-Bank-UI-UX-Case-Study-c2979a1395de4ccd930f5ef483abcb57',
     },
     {
-      img: propBaronImg,
-      name: 'Property Baron Network',
-      description:
-        'A Property technology dashboard platform for trading and management.',
-      link: 'https://numerous-sardine-289.notion.site/PBN-Web-App-UI-UX-Case-Study-5fce8d1bf4474b618c9d21556caecc66',
+      img: landCurator,
+      name: 'Land Curator',
+      textTheme: 'light',
+      description: 'Find Your Perfect Land in Texas & New Mexico.',
+      link: 'https://landcurator.com',
     },
     {
-      img: sanoImg,
-      name: 'Sano',
+      img: zeem,
+      name: 'Zeem',
       textTheme: 'light',
       description:
-        'Everyday health application that allow users to set and track their nutrition goals.',
-      link: 'https://numerous-sardine-289.notion.site/Sano-App-UI-UX-Case-Study-006d2b115cc04210ae4fb4a2d246926d',
+        'Zeem makes studying abroad easy and within reach. Direct access to top universities and even student loan',
+      link: 'https://numerous-sardine-289.notion.site/Zeem-Website-2231ca569bba804189bfd0df783f4508?source=copy_link',
     },
   ];
 
@@ -61,7 +61,8 @@ export default function Home() {
             Product Designer <br /> and Musician
           </h1>
           <p className={classNames('body-text', styles.captionText)}>
-            I design digital products that drive growth, with a deep focus on user behaviour, business goals, and design thinking.
+            I design digital products that drive growth, with a deep focus on
+            user behaviour, business goals, and design thinking.
           </p>
         </div>
 
@@ -106,7 +107,7 @@ export default function Home() {
                     size="large"
                     variant="contained"
                   >
-                    <span>Explore</span>
+                    <span>Read Case Study</span>
                     <img alt="" className={styles.arrRight} src={arrRight} />
                   </Button>
                 </div>
